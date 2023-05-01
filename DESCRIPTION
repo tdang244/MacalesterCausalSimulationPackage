@@ -9,7 +9,9 @@ License: `use_gpl3_license()`
 Imports:
     dplyr,
     ggplot2,
-    broom
+    broom,
+    gridExtra,
+    splines
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

@@ -192,7 +192,7 @@ ipw_viz_point <- function(data, x, y){
   p2 <- ggplot2::ggplot(data, aes({{x}}, {{y}})) +
     ggplot2::geom_point() +
     ggplot2::geom_smooth(se = F, color = "blue", method = "loess") +
-    ggplot2::geom_smooth(formula = y ~ ns(x,3), method = "glm",
+    ggplot2::geom_smooth(formula = y ~ splines::ns(x,3), method = "glm",
                 method.args = list(family = "binomial"),
                 se = F, color = 'red') +
     ggplot2::labs(title = "Assuming Nonlinearity",
