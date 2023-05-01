@@ -1,0 +1,64 @@
+check_key_structure_independence
+                        Provides information on the
+                        marginal/conditional (in)dependence of the
+                        three key causal structures: chain, fork, and
+                        collider
+ipw_viz_bar             Creating bar charts to check if the IPW
+                        weighting actually removed the relationship
+                        between treatment and the intended variable
+ipw_viz_box             Creating a boxplot to compare effectiveness of
+                        propensity score weighting
+ipw_viz_point           Creating scatterplots to determine model
+                        specification for propensity scoring (linear or
+                        non-linear) - the blue smooth reflects observed
+                        data trends, and the red smooth shows the
+                        predictions from a logistic regression model
+                        with a specific model formula
+odds_to_prob            Changing odds to a probability
+set_x_in_collider       Simulates X values in a collider. This function
+                        is used within the
+                        simple_collider_simulation(n, x_numeric,
+                        y_numeric, z_numeric) function.
+set_x_in_fork           Simulates X values that are dependent on Y
+                        values in a fork. This function is used within
+                        the simple_fork_simulation(n, x_numeric,
+                        y_numeric, z_numeric) function.
+set_y_and_z_in_chain    Simulates Y and Z values where Y values are
+                        dependent on X values for a chain. This
+                        function is used within the
+                        simple_chain_simulation(n, x_numeric,
+                        y_numeric, z_numeric).
+set_z_in_chain          Simulates Z values that are dependent on Y
+                        values in a chain. This function is used within
+                        the set_y_and_z_in_chain(n, y_numeric,
+                        z_numeric, X) function.
+set_z_in_collider       Simulates Z values in a collider. This function
+                        is used within the
+                        simple_collider_simulation(n, x_numeric,
+                        y_numeric, z_numeric) function.
+set_z_in_fork           Simulates Z values that are dependent on Y
+                        values in a fork. This function is used within
+                        the simple_fork_simulation(n, x_numeric,
+                        y_numeric, z_numeric) function.
+sim_from_str            Simulates data based on the structural
+                        equations provided by the user
+simple_chain_simulation
+                        Simulates the dependency structure of a basic
+                        chain, with 3 variables X, Y, Z, where X → Y →
+                        Z
+simple_collider_simulation
+                        Simulates the dependency structure of a basic
+                        collider, with 3 variables X, Y, Z, where X → Y
+                        ← Z
+simple_fork_simulation
+                        Simulates the dependency structure of a basic
+                        fork, with 3 variables X, Y, Z, where X ← Y → Z
+simulate_many           Replicates n number of times a chosen function
+                        out of 3 functions: simple_chain_simulation(n,
+                        x_numeric, y_numeric, z_numeric),
+                        simple_fork_simulation(n, x_numeric, y_numeric,
+                        z_numeric), simple_collider_simulation(n,
+                        x_numeric, y_numeric, z_numeric).
+weighting               Creating the weights used for inverse
+                        probability weighting or propensity score
+                        weighting

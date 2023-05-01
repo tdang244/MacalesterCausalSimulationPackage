@@ -1,0 +1,155 @@
+* using log directory ‘/Users/tdang/Documents/GitHub/MacalesterCausalSimulationPackage/MacalesterCausalSimulation.Rcheck’
+* using R version 4.2.2 (2022-10-31)
+* using platform: x86_64-apple-darwin17.0 (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘MacalesterCausalSimulation/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘MacalesterCausalSimulation’ version ‘0.1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking serialization versions ... OK
+* checking whether package ‘MacalesterCausalSimulation’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Non-standard license specification:
+  `use_gpl3_license()`
+Standardizable: FALSE
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... WARNING
+Found the following file with non-ASCII characters:
+  functions.R
+Portable packages must use only ASCII characters in their R code,
+except perhaps in comments.
+Use \uxxxx escapes for other characters.
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'::' or ':::' imports not declared from:
+  ‘broom’ ‘dplyr’ ‘ggplot2’ ‘gridExtra’
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+ipw_viz_bar: no visible global function definition for ‘aes’
+ipw_viz_box: no visible global function definition for ‘aes’
+ipw_viz_point: no visible global function definition for ‘aes’
+set_x_in_collider: no visible global function definition for ‘rnorm’
+set_x_in_collider: no visible global function definition for ‘rbinom’
+set_x_in_fork: no visible global function definition for ‘rnorm’
+set_x_in_fork: no visible global function definition for ‘rbinom’
+set_y_and_z_in_chain: no visible global function definition for ‘rnorm’
+set_y_and_z_in_chain: no visible global function definition for
+  ‘rbinom’
+set_z_in_chain: no visible global function definition for ‘rnorm’
+set_z_in_chain: no visible global function definition for ‘rbinom’
+set_z_in_collider: no visible global function definition for ‘rnorm’
+set_z_in_collider: no visible global function definition for ‘rbinom’
+set_z_in_fork: no visible global function definition for ‘rnorm’
+set_z_in_fork: no visible global function definition for ‘rbinom’
+sim_from_str: no visible global function definition for ‘rnorm’
+sim_from_str: no visible global function definition for ‘runif’
+sim_from_str: no visible global function definition for ‘rbinom’
+simple_chain_simulation: no visible global function definition for
+  ‘rnorm’
+simple_chain_simulation: no visible global function definition for
+  ‘rbinom’
+simple_chain_simulation: no visible global function definition for ‘lm’
+simple_chain_simulation: no visible global function definition for
+  ‘glm’
+simple_collider_simulation: no visible global function definition for
+  ‘rnorm’
+simple_collider_simulation: no visible global function definition for
+  ‘rbinom’
+simple_collider_simulation: no visible global function definition for
+  ‘lm’
+simple_collider_simulation: no visible global function definition for
+  ‘glm’
+simple_fork_simulation: no visible global function definition for
+  ‘rnorm’
+simple_fork_simulation: no visible global function definition for
+  ‘rbinom’
+simple_fork_simulation: no visible global function definition for ‘lm’
+simple_fork_simulation: no visible global function definition for ‘glm’
+simulate_many: no visible binding for global variable ‘description’
+simulate_many: no visible binding for global variable ‘model_pval’
+weighting: no visible global function definition for ‘predict’
+Undefined global functions or variables:
+  aes description glm lm model_pval predict rbinom rnorm runif
+Consider adding
+  importFrom("stats", "glm", "lm", "predict", "rbinom", "rnorm", "runif")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... NOTE
+Rd file 'simple_chain_simulation.Rd':
+  \examples lines wider than 100 characters:
+     # Results in a chain simulation with 10000 simulated observations of X, Y, Z, with X and Y being numeric and Z being binary.
+
+Rd file 'simple_collider_simulation.Rd':
+  \examples lines wider than 100 characters:
+     # Results in a collider simulation with 10000 simulated observations of X, Y, Z, with X and Y being numeric and Z being binary.
+
+Rd file 'simple_fork_simulation.Rd':
+  \examples lines wider than 100 characters:
+     # Results in a fork simulation with 10000 simulated observations of X, Y, Z, with X and Y being numeric and Z being binary.
+
+Rd file 'simulate_many.Rd':
+  \examples lines wider than 100 characters:
+     # A replication of the simple_fork_simulation(10000, x_numeric = TRUE, y_numeric = FALSE, z_numeric = TRUE) for 100 times
+     simulate_many(simple_fork_simulation(10000, x_numeric = TRUE, y_numeric = FALSE, z_numeric = TRUE), n_rep_time = 100)
+
+These lines will be truncated in the PDF manual.
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'simulate_many'
+  ‘func’
+Documented arguments not in \usage in documentation object 'simulate_many':
+  ‘function’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in ‘MacalesterCausalSimulation-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: ipw_viz_bar
+> ### Title: Creating bar charts to check if the IPW weighting actually
+> ###   removed the relationship between treatment and the intended variable
+> ### Aliases: ipw_viz_bar
+> 
+> ### ** Examples
+> 
+> ipw_viz_bar(sim_data, Z, A)
+Error in ggplot2::ggplot(., aes({ : object 'sim_data' not found
+Calls: ipw_viz_bar -> %>% -> <Anonymous>
+Execution halted
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
+* DONE
+Status: 1 ERROR, 4 WARNINGs, 2 NOTEs
