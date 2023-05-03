@@ -607,9 +607,11 @@ simple_collider_simulation <- function(n, x_numeric, y_numeric, z_numeric) {
   return(result_df)
 }
 
-#' Replicates n number of times a chosen function out of 3 functions: simple_chain_simulation(n, x_numeric, y_numeric, z_numeric), simple_fork_simulation(n, x_numeric, y_numeric, z_numeric), simple_collider_simulation(n, x_numeric, y_numeric, z_numeric).
+#' Function simulator: Simulates a key structure simulation function of choice for n number of times
 #'
-#' @param function A function out of the 3 configured functions: simple_chain_simulation(n, x_numeric, y_numeric, z_numeric), simple_fork_simulation(n, x_numeric, y_numeric, z_numeric), simple_collider_simulation(n, x_numeric, y_numeric, z_numeric)
+#' This function replicates n number of times a chosen function out of 3 functions: simple_chain_simulation(n, x_numeric, y_numeric, z_numeric), simple_fork_simulation(n, x_numeric, y_numeric, z_numeric), simple_collider_simulation(n, x_numeric, y_numeric, z_numeric).
+#'
+#' @param func A function out of the 3 configured functions: simple_chain_simulation(n, x_numeric, y_numeric, z_numeric), simple_fork_simulation(n, x_numeric, y_numeric, z_numeric), simple_collider_simulation(n, x_numeric, y_numeric, z_numeric)
 #' @param n_rep_time The number of times a function is replicated
 #' @return A data frame of the 4 tests performed (Check if X and Y are marginally dependent, Check if Z and Y are marginally dependent, Check if X and Z are marginally dependent, Check if X and Z are conditionally independent given Y), the percentage of significant p-values corresponding to the tests, and the interpretation of the result.
 #' @examples
